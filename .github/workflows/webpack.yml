@@ -1,10 +1,9 @@
+# Note: This project does not use Webpack (Expo SDK 54 / React Native is used for mobile; vanilla ES6 is used for web consoles).
+# Disabled automatic push/PR triggers to avoid false CI failures.
 name: NodeJS with Webpack
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
   build:

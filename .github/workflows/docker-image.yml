@@ -1,10 +1,9 @@
+# Note: No root Dockerfile exists in this repository (deployment target is Render via render.yaml).
+# Disabled automatic push/PR triggers to avoid false CI failures.
 name: Docker Image CI
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
 

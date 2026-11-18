@@ -1,12 +1,9 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Note: MetroDrip is an Expo mobile application and Django monolithic backend, not a GitHub Pages static site.
+# Deploying the root directory to GitHub Pages would inadvertently expose backend code and secrets.
+# Disabled automatic push triggers to avoid accidental deployments.
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
