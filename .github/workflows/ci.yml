@@ -73,7 +73,7 @@ jobs:
 
       - name: Run Django tests on PostgreSQL
         working-directory: metrodrip_backend
-        run: python manage.py test --verbosity 2
+        run: python manage.py test identity catalog orders fulfillment content --verbosity 2
 
       - name: Run client and static checks
         run: |
