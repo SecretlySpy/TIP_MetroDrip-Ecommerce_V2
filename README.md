@@ -388,5 +388,5 @@ Authoritative project specifications and evidence statuses based on [AGENTS.md](
 7. [Verification and Evaluation](Project%20Guidelines/Verification%20and%20Evaluation.md) — Current rerun matrix separated from historical tests and external/native/live gaps.
 8. [Decisions and Handover](Project%20Guidelines/Decisions%20and%20Handover.md) — Active ADRs, implementation snapshot, exact paths, blockers, and cold-start continuation instructions.
 9. [AI Documentation Notes](Project%20Guidelines/AI%20Documentation%20Notes.md) — Compact retrieval map for locating authoritative project knowledge.
-10. [Tech Stack Setup Guide](Project%20Guidelines/Tech%20Stack%20Setup%20Guide.md) — Local setup, service launch, and troubleshooting guidance, with an [interactive companion](Project%20Guidelines/tech-stack-setup.html).
+10. [Tech Stack Setup Guide](Project%20Guidelines/Tech%20Stack%20Setup%20Guide.md) — Local setup, service launch, and troubleshooting guidance, with an [interactive companion](Project%20Guidelines/tech-stack-setup.html) (deployed to GitHub Pages via [static.yml](.github/workflows/static.yml)).
 11. [QA Audit and Implementation Report — 2026-10-11](Project%20Guidelines/QA%20Audit%20and%20Implementation%20Report%20-%202026-10-11.md) — Prior dated audit, implemented fixes, measured evidence, residual risks, and release blockers.

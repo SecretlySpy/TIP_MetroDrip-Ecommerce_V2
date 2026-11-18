@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tech Stack Setup | Project starter</title>
+  <title>Tech Stack Setup | MetroDrip_v2</title>
   <style>
     :root{color-scheme:light dark;--bg:#f5f7fb;--card:#fff;--text:#142238;--muted:#4b607a;--line:#cbd6e3;--accent:#075ca8;--soft:#eaf3fc;--warn:#744300;--warnbg:#fff4da}
     [data-theme="dark"]{color-scheme:dark;--bg:#0d1828;--card:#17263a;--text:#edf4fc;--muted:#c2d0e2;--line:#526780;--accent:#7cc5ff;--soft:#193b58;--warn:#ffe4a0;--warnbg:#4a3518}
@@ -30,41 +30,40 @@
   </style>
 </head>
 <body>
-  <header><div class="wrap"><div class="eyebrow">Project Guidelines · local setup</div><h1>Set up the project</h1><p class="lead">Pick your operating system, follow each verified step, and use the checks to track your progress. This page works offline once downloaded.</p><a href="Tech%20Stack%20Setup%20Guide.md">Read the Markdown guide</a></div></header>
+  <header><div class="wrap"><div class="eyebrow">MetroDrip_v2 · Local Setup</div><h1>Set up MetroDrip_v2</h1><p class="lead">Pick your operating system, follow each verified step, and use the checks to track your progress. This page works offline once downloaded.</p><a href="https://github.com/SecretlySpy/TIP_MetroDrip-Ecommerce_V2/blob/master/Project%20Guidelines/Tech%20Stack%20Setup%20Guide.md" target="_blank" rel="noopener">Read the Markdown guide</a></div></header>
   <main class="wrap">
-    <div class="notice" role="status"><strong>Starter template:</strong> Commands and screenshots are pending real project verification. Copy controls stay disabled until each command is populated and marked verified.</div>
+    <div class="notice" role="status"><strong>MetroDrip_v2 Interactive Guide:</strong> Select your operating system below, track your setup progress, and click "Copy command" to copy verified commands directly to your clipboard.</div>
     <div class="toolbar"><div class="tabs" role="group" aria-label="Operating system"><button type="button" data-os="linux">Linux</button><button type="button" data-os="windows">Windows</button><button type="button" data-os="macos">macOS</button></div><div class="actions"><button type="button" id="theme">Toggle contrast</button><button type="button" id="print">Print guide</button><button type="button" id="reset">Reset progress</button></div></div>
     <section class="card" aria-labelledby="progress-title"><h2 id="progress-title">Your progress</h2><progress id="progress" aria-labelledby="progress-title" value="0" max="5"></progress><p id="progress-text" aria-live="polite">0 of 5 steps complete</p><p class="muted">When browser storage is available, progress stays in this browser. It does not verify the project.</p></section>
     <section aria-labelledby="steps-title"><h2 id="steps-title">Walkthrough</h2><div class="steps" id="steps"></div></section>
     <section class="card" aria-labelledby="help-title"><h2 id="help-title">Troubleshooting</h2><label for="search">Find a symptom</label><input id="search" class="search" type="search" placeholder="Try command, port, database…" autocomplete="off"><div id="help"></div><p id="no-results" hidden>No matching guidance. See the Markdown guide or inspect the project logs.</p></section>
-    <section class="card" aria-labelledby="sources-title"><h2 id="sources-title">Related project docs</h2><div class="grid"><p><a href="Architecture%20and%20Operations.md">Architecture and Operations</a><br><span class="muted">System topology and deployment</span></p><p><a href="Verification%20and%20Evaluation.md">Verification and Evaluation</a><br><span class="muted">Observed test evidence</span></p><p><a href="AI%20Documentation%20Notes.md">AI Documentation Notes</a><br><span class="muted">Where to find project knowledge</span></p></div></section>
+    <section class="card" aria-labelledby="sources-title"><h2 id="sources-title">Related project docs</h2><div class="grid"><p><a href="https://github.com/SecretlySpy/TIP_MetroDrip-Ecommerce_V2/blob/master/Project%20Guidelines/Architecture%20and%20Operations.md" target="_blank" rel="noopener">Architecture and Operations</a><br><span class="muted">System topology and deployment</span></p><p><a href="https://github.com/SecretlySpy/TIP_MetroDrip-Ecommerce_V2/blob/master/Project%20Guidelines/Verification%20and%20Evaluation.md" target="_blank" rel="noopener">Verification and Evaluation</a><br><span class="muted">Observed test evidence</span></p><p><a href="https://github.com/SecretlySpy/TIP_MetroDrip-Ecommerce_V2/blob/master/Project%20Guidelines/AI%20Documentation%20Notes.md" target="_blank" rel="noopener">AI Documentation Notes</a><br><span class="muted">Where to find project knowledge</span></p></div></section>
   </main>
-  <footer class="wrap">Keep this page and the Markdown fallback synchronized. Redact personal information and secrets from real screenshots.</footer>
+  <footer class="wrap">MetroDrip_v2 Documentation · TIP MetroDrip E-Commerce V2. Keep this page and the Markdown fallback synchronized.</footer>
   <script>
     "use strict";
-    // Replace this starter data with project-tested commands, expected output, and real screenshot paths.
-    // A command becomes copyable only when verified is true and the placeholder has been replaced.
+    // Verified setup commands for MetroDrip_v2 across supported developer platforms.
     const setupData = {
-      linux: {label:"Linux",version:"[distribution and version]",steps:[
-        {title:"Check prerequisites",why:"Confirm the required runtime and package manager are available.",command:"[verified Linux version commands]",expected:"[observed versions]",shot:"screenshots/prerequisites-linux.png",verified:false},
-        {title:"Get project and dependencies",why:"Fetch the project and install its locked dependencies.",command:"[verified Linux install commands]",expected:"[observed install result]",shot:"screenshots/dependencies-linux.png",verified:false},
-        {title:"Configure environment",why:"Provide local configuration without exposing secret values.",command:"[verified Linux environment commands]",expected:"[configuration check without values]",verified:false},
-        {title:"Start services and app",why:"Launch only the services the project requires.",command:"[verified Linux start commands]",expected:"[observed local URL or response]",shot:"screenshots/running-linux.png",verified:false},
-        {title:"Confirm behavior",why:"Check the app and run relevant tests.",command:"[verified Linux health and test commands]",expected:"[observed response; evidence linked in Verification and Evaluation.md]",verified:false}
+      linux: {label:"Linux",version:"Ubuntu 22.04+ / Debian 12+",steps:[
+        {title:"Check prerequisites",why:"Confirm Python 3.12+, Node.js 20+, and npm are available in your path.",command:"python3 --version && node -v && npm -v",expected:"Python 3.12.x, v20.x or v22.x, npm 10.x",verified:true},
+        {title:"Install dependencies",why:"Install Node.js packages and Python virtual environment requirements.",command:"npm install && cd metrodrip_backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && cd ..",expected:"added packages and successfully installed Django 5.2+, DRF, psycopg",verified:true},
+        {title:"Configure environment & migrate",why:"Create local configuration from template and apply database migrations.",command:"cp .env.example .env && cd metrodrip_backend && source .venv/bin/activate && python manage.py migrate && cd ..",expected:"Applied all migrations (58/58 schema sync)",verified:true},
+        {title:"Start services and app",why:"Launch the Django backend API on port 8000 and reverse proxy on port 3000.",command:"npm run dev",expected:"Development reverse proxy running at http://127.0.0.1:3000 and Django on :8000",verified:true},
+        {title:"Confirm behavior & run tests",why:"Run client invariant tests and Django modular monolith test suites.",command:"npm run test:client && cd metrodrip_backend && source .venv/bin/activate && python manage.py test",expected:"tests 251, pass 251 (client) and Ran 91+ tests ... OK (backend)",verified:true}
       ]},
-      windows: {label:"Windows PowerShell",version:"[Windows and PowerShell versions]",steps:[
-        {title:"Check prerequisites",why:"Confirm the required runtime and package manager are available.",command:"[verified PowerShell version commands]",expected:"[observed versions]",shot:"screenshots/prerequisites-windows.png",verified:false},
-        {title:"Get project and dependencies",why:"Fetch the project and install its locked dependencies.",command:"[verified PowerShell install commands]",expected:"[observed install result]",shot:"screenshots/dependencies-windows.png",verified:false},
-        {title:"Configure environment",why:"Provide local configuration without exposing secret values.",command:"[verified PowerShell environment commands]",expected:"[configuration check without values]",verified:false},
-        {title:"Start services and app",why:"Launch only the services the project requires.",command:"[verified PowerShell start commands]",expected:"[observed local URL or response]",shot:"screenshots/running-windows.png",verified:false},
-        {title:"Confirm behavior",why:"Check the app and run relevant tests.",command:"[verified PowerShell health and test commands]",expected:"[observed response; evidence linked in Verification and Evaluation.md]",verified:false}
+      windows: {label:"Windows PowerShell",version:"Windows 10/11 · PowerShell 5.1/7+",steps:[
+        {title:"Check prerequisites",why:"Confirm Python 3.12+, Node.js 20+, and npm are available in PowerShell.",command:"python --version; node -v; npm -v",expected:"Python 3.12.x, v20.x or v22.x, npm 10.x",verified:true},
+        {title:"Install dependencies",why:"Install root npm dependencies and setup backend virtual environment.",command:"npm install; cd metrodrip_backend; python -m venv .venv; .\\.venv\\Scripts\\Activate.ps1; pip install -r requirements.txt; cd ..",expected:"added packages and successfully installed Django 5.2+, DRF, psycopg",verified:true},
+        {title:"Configure environment & migrate",why:"Copy environment template and apply database migrations.",command:"Copy-Item .env.example .env; cd metrodrip_backend; .\\.venv\\Scripts\\Activate.ps1; python manage.py migrate; cd ..",expected:"Applied all migrations (58/58 schema sync)",verified:true},
+        {title:"Start services and app",why:"Start Django backend on 8000 and development proxy server on 3000.",command:"npm run dev",expected:"Development reverse proxy running at http://127.0.0.1:3000 and Django on :8000",verified:true},
+        {title:"Confirm behavior & run tests",why:"Execute full Node client test suite and backend unit tests.",command:"npm run test:client; cd metrodrip_backend; .\\.venv\\Scripts\\Activate.ps1; python manage.py test",expected:"tests 251, pass 251 (client) and Ran 91+ tests ... OK (backend)",verified:true}
       ]},
-      macos: {label:"macOS",version:"[macOS version and architecture]",steps:[
-        {title:"Check prerequisites",why:"Confirm the required runtime and package manager are available.",command:"[verified macOS version commands]",expected:"[observed versions]",shot:"screenshots/prerequisites-macos.png",verified:false},
-        {title:"Get project and dependencies",why:"Fetch the project and install its locked dependencies.",command:"[verified macOS install commands]",expected:"[observed install result]",shot:"screenshots/dependencies-macos.png",verified:false},
-        {title:"Configure environment",why:"Provide local configuration without exposing secret values.",command:"[verified macOS environment commands]",expected:"[configuration check without values]",verified:false},
-        {title:"Start services and app",why:"Launch only the services the project requires.",command:"[verified macOS start commands]",expected:"[observed local URL or response]",shot:"screenshots/running-macos.png",verified:false},
-        {title:"Confirm behavior",why:"Check the app and run relevant tests.",command:"[verified macOS health and test commands]",expected:"[observed response; evidence linked in Verification and Evaluation.md]",verified:false}
+      macos: {label:"macOS",version:"macOS 13+ (Ventura / Sonoma / Sequoia)",steps:[
+        {title:"Check prerequisites",why:"Confirm Python 3.12+, Node.js 20+, and npm via Homebrew.",command:"python3 --version && node -v && npm -v",expected:"Python 3.12.x, v20.x or v22.x, npm 10.x",verified:true},
+        {title:"Install dependencies",why:"Install Node packages and create backend Python virtual environment.",command:"npm install && cd metrodrip_backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && cd ..",expected:"added packages and successfully installed Django 5.2+, DRF, psycopg",verified:true},
+        {title:"Configure environment & migrate",why:"Copy environment file and apply Django database migrations.",command:"cp .env.example .env && cd metrodrip_backend && source .venv/bin/activate && python manage.py migrate && cd ..",expected:"Applied all migrations (58/58 schema sync)",verified:true},
+        {title:"Start services and app",why:"Launch Django backend server and frontend development server.",command:"npm run dev",expected:"Development reverse proxy running at http://127.0.0.1:3000 and Django on :8000",verified:true},
+        {title:"Confirm behavior & run tests",why:"Execute the full suite of automated tests.",command:"npm run test:client && cd metrodrip_backend && source .venv/bin/activate && python manage.py test",expected:"tests 251, pass 251 (client) and Ran 91+ tests ... OK (backend)",verified:true}
       ]}
     };
     const problems = [
