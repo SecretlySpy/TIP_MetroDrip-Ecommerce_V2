@@ -196,7 +196,7 @@ def send_transactional_email(to_email, to_name, subject, html_content, text_cont
             'api-key': api_key,
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'User-Agent': 'MetroDripJS-Identity/1.0',
+            'User-Agent': 'MetroDrip_v2-Identity/1.0',
         },
         method='POST',
     )

@@ -1,14 +1,24 @@
 # Verification and Evaluation
 
-**Status:** ACADEMIC DEMO HOLD and PRODUCTION HOLD; 2026-10-27 team/logo checks pass, but hosted image recovery, PayMongo activation, and device APK checks remain open
+**Status:** ACADEMIC DEMO HOLD and PRODUCTION HOLD; 2026-11-18 project identity & workspace verification pass, 251 client tests pass; hosted image recovery, PayMongo activation, and device APK checks remain open
 
 **Current authority:** [Comprehensive Repository Audit and Academic Demo Plan — 2026-10-19](Comprehensive%20Repository%20Audit%20and%20Academic%20Demo%20Plan%20-%202026-10-19.md), this matrix, and the dated prior QA reports retained below
 
 **Evidence rule:** An executed unit/mock/SQLite/static check is labeled separately from PostgreSQL, native-device, PayMongo, and Render evidence.
 
+## Project Rebranding & Workspace Verification Pass — 2026-11-18
+
+Executed complete repository identity update from `MetroDripJS` to `MetroDrip_v2`, workspace and IDE configuration asset migration, and regression verification across mobile client services, checkout invariants, and backend orders saga.
+
+| Check | Result |
+|---|---|
+| `npm run test:client` | **PASS**, 251/251 unit and invariant tests (0 failures). Covers API client isolation, cart logic, product variants, checkout builder, deep linking, and team dataset sync. |
+| `python manage.py test orders` | **PASS**, 91/91 tests (5 skips on SQLite). Verified checkout payment contracts, PayMongo hosted redirects, status notifications, and transitions. |
+| Global codebase identity sweep | **PASS**, 0 remaining occurrences of `MetroDripJS`. Renamed workspace file (`MetroDrip_v2.code-workspace`) and IDE module (`.idea/MetroDrip_v2.iml`). |
+
 ## Full-Stack QA Audit, Test Automation & Regression Pass — 2026-11-03
 
-Executed comprehensive autonomous QA audit, test automation suite execution, bug fixes, and feature parity evaluations across all four MetroDripJS interfaces (Admin Console, Merchant Console, Customer Storefront, Expo Mobile App) and the Django modular monolith backend on disposable SQLite and local proxy servers.
+Executed comprehensive autonomous QA audit, test automation suite execution, bug fixes, and feature parity evaluations across all four MetroDrip_v2 interfaces (Admin Console, Merchant Console, Customer Storefront, Expo Mobile App) and the Django modular monolith backend on disposable SQLite and local proxy servers.
 
 | Check | Result |
 |---|---|

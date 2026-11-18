@@ -1,4 +1,4 @@
-# MetroDripJS — Comprehensive QA Audit & Execution Report
+# MetroDrip_v2 — Comprehensive QA Audit & Execution Report
 
 **Date:** 2026-11-03  
 **Status:** ACADEMIC DEMO HOLD / PRODUCTION HOLD (Local verification passed; physical device runtime and live PayMongo charges remain unverified)  
@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This comprehensive audit and test automation pass conducted an exhaustive, multi-tier inspection, execution, and verification across all four client and backend systems of MetroDripJS:
+This comprehensive audit and test automation pass conducted an exhaustive, multi-tier inspection, execution, and verification across all four client and backend systems of MetroDrip_v2:
 
 1. **Admin Web Console (`web/admin/`)**: Complete administrative suite covering dashboard analytics, users directory, granular roles and permissions, platform configuration settings, audit logging, and account credentials.
 2. **Merchant Web Console (`web/merchant/`)**: Store management portal covering dashboard metrics, product catalog, variation matrix, gallery/media manager, bulk actions, inventory stock control, order fulfillment, shipping zones, reviews moderation, banner content management, and analytics.
@@ -19,7 +19,7 @@ This comprehensive audit and test automation pass conducted an exhaustive, multi
 
 ### Key Outcomes
 - **Django Backend Test Suite**: Executed 246 tests via `python manage.py test`. Result: **246 passed, 0 failed, 6 skipped** (6 PostgreSQL-specific concurrency tests safely skipped on SQLite).
-- **Client Test Suite**: Executed 250 unit and invariant tests via `npm run test:client`. Result: **250 passed, 0 failed**.
+- **Client Test Suite**: Executed 251 unit and invariant tests via `npm run test:client`. Result: **251 passed, 0 failed**.
 - **Browser E2E & Accessibility Suite**: Executed 10 comprehensive Playwright suites with AxeBuilder WCAG 2.1 AA audits. Result: **All passed with 0 accessibility violations**.
 - **Type Checking & Bundling**: Executed `npx tsc --noEmit` (**0 diagnostics**) and `npx expo export --platform all` (**100% clean bundle compilation** for Web, Android bytecode HBC, and iOS bytecode HBC).
 - **Bugs Identified & Resolved**:

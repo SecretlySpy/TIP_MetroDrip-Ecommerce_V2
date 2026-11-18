@@ -2,7 +2,7 @@
 
 **Status:** Approved core scope; 2026-10-19 repository audit found three immediate blockers plus essential-workflow gaps, and release gates remain on hold
 
-**Project:** MetroDripJS urban streetwear commerce platform
+**Project:** MetroDrip_v2 urban streetwear commerce platform
 
 **Current scheduled-demo target:** Secured same-origin Django modular monolith on one Render Free web service, one Render Free PostgreSQL database, and an EAS internal Android APK; an external free database remains conditional
 

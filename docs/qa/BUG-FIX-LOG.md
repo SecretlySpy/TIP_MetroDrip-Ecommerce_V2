@@ -1,4 +1,4 @@
-# MetroDripJS — Bug Fix & Remediation Log
+# MetroDrip_v2 — Bug Fix & Remediation Log
 
 **Log Updated:** 2026-11-03  
 **Auditor:** Autonomous Senior QA & Full-Stack Engineer  

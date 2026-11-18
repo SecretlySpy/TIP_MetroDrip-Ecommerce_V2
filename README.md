@@ -1,8 +1,8 @@
-# MetroDripJS
+# MetroDrip_v2
 
 > **Academic-demo and production status: HOLD.** All local unit, invariant, integration, Playwright browser, accessibility (WCAG 2.1 AA), and multiplatform bundle compilation checks are **VERIFIED and PASSING** (as of 2026-11-03). Production release and live demo remain on **HOLD** pending physical Android/iOS device execution, live PayMongo payment charges, and stakeholder data retention sign-off. See the [QA Report](docs/qa/QA-REPORT.md), [Test Results](docs/qa/TEST-RESULTS.md), and [Current Verification & Evaluation](Project%20Guidelines/Verification%20and%20Evaluation.md).
 
-MetroDripJS is an urban streetwear e-commerce platform featuring an Expo/React Native customer mobile app, responsive web consoles for merchants and administrators, and a modular monolithic Django REST Framework backend.
+MetroDrip_v2 is an urban streetwear e-commerce platform featuring an Expo/React Native customer mobile app, responsive web consoles for merchants and administrators, and a modular monolithic Django REST Framework backend.
 
 ---
 
@@ -87,6 +87,10 @@ MetroDripJS is an urban streetwear e-commerce platform featuring an Expo/React N
 
 ## 3. Local Development Setup
 
+### Workspace & IDE Configuration
+- **VS Code / Windsurf / Cursor / Antigravity**: Open [`MetroDrip_v2.code-workspace`](MetroDrip_v2.code-workspace) via `File > Open Workspace from File...` for pre-configured project folders and environment settings.
+- **IntelliJ IDEA / Android Studio**: The root module definition is maintained at [`.idea/MetroDrip_v2.iml`](.idea/MetroDrip_v2.iml) registered in [`.idea/modules.xml`](.idea/modules.xml).
+
 ### Prerequisites
 - Python 3.12+
 - Node.js 20+ & npm 10+
@@ -146,7 +150,7 @@ npx expo export --platform all
 All suites run against disposable databases or mocked endpoints to ensure safety.
 
 ```bash
-# 1. Run all Node.js client service & invariant unit tests (250 tests)
+# 1. Run all Node.js client service & invariant unit tests (251 tests)
 npm run test:client
 
 # 2. Run Django modular monolith backend tests (246 tests)
@@ -214,7 +218,7 @@ The repository also retains a separately tested five-service/gateway baseline un
 
 ### Historical architecture overview
 
-MetroDripJS decomposes its monolithic backend into five bounded contexts with private databases, dedicated migrations, zero cross-app ORM imports, and snapshot-based contracts:
+MetroDrip_v2 decomposes its monolithic backend into five bounded contexts with private databases, dedicated migrations, zero cross-app ORM imports, and snapshot-based contracts:
 
 ```
                           ┌──────────────────────────┐

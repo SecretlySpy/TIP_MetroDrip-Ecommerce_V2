@@ -1,4 +1,4 @@
-# MetroDripJS Setup & Emulator Guide
+# MetroDrip_v2 Setup & Emulator Guide
 
 > **Architecture transition:** The currently approved scheduled academic-demo profile is one secured same-origin Django monolith, one Render Free web service, and one Render Free PostgreSQL database. A longer-lived external free database remains a proposed alternative, not an approved switch. COD plus PayMongo Hosted Checkout for GCash, Maya, and cards is in scope. No paid Render resource, worker, cron, Redis/Key Value, disk, autoscaling, or upgrade is authorized. Production remains HOLD. The microservice/Compose commands later in this guide reproduce the historical baseline for regression only; they are not the target deployment runbook. Follow [Architecture and Operations](Architecture%20and%20Operations.md) and the active [ADRs](Decisions%20and%20Handover.md#active-architecture-decisions--2026-09-28).
 
@@ -79,7 +79,7 @@ For mocked staff-console checks, install Chromium with `npx playwright install c
 
 The previous dated QA run used Python 3.15.0b2/Django 5.2.16. Repeat final checks on the supported runtime. Docker/PostgreSQL, PayMongo delivery, connected Render, and native devices were not established by that historical run.
 
-MetroDripJS is an Expo shopping application built with React Native.
+MetroDrip_v2 is an Expo shopping application built with React Native.
 
 ## Prerequisites and versions
 

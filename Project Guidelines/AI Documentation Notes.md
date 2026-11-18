@@ -1,6 +1,6 @@
 # AI Documentation Notes
 
-MetroDripJS is an Expo/React Native customer app, a same-origin browser shop at `/customer/`, plus responsive merchant/admin consoles. The active implementation is the `metrodrip_backend/` Django modular monolith; local development defaults to SQLite. The approved academic target is one same-origin Render Free Django service, one no-cost PostgreSQL database, and an EAS internal APK. The current Blueprint has a broken extra static-console origin, stale branch pins, and unsafe deploy-time staff seeding. Checkout supports COD and PayMongo Hosted Checkout for GCash, Maya, and cards. The five-service/gateway assets are historical migration sources. Academic-demo and production release are **HOLD**.
+MetroDrip_v2 is an Expo/React Native customer app, a same-origin browser shop at `/customer/`, plus responsive merchant/admin consoles. The active implementation is the `metrodrip_backend/` Django modular monolith; local development defaults to SQLite. The approved academic target is one same-origin Render Free Django service, one no-cost PostgreSQL database, and an EAS internal APK. The current Blueprint has a broken extra static-console origin, stale branch pins, and unsafe deploy-time staff seeding. Checkout supports COD and PayMongo Hosted Checkout for GCash, Maya, and cards. The five-service/gateway assets are historical migration sources. Academic-demo and production release are **HOLD**.
 
 ## Knowledge map
 

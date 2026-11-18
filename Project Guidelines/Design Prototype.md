@@ -1,7 +1,7 @@
 # Design Prototype
 
 **Status:** Approved design additions completed in Figma; code implemented locally; final/browser/native verification separated below
-**Project:** MetroDripJS Urban Streetwear E-Commerce Platform  
+**Project:** MetroDrip_v2 Urban Streetwear E-Commerce Platform  
 **Target Clients:** React Native / Expo Mobile App (iOS & Android) + Web Merchant and Administrator Consoles
 **Figma Prototype:** [MetroDrip Figma Workspace](https://www.figma.com/design/SmJIlTZ9ZVRxQ5eKucmrd0/MetroDrip?node-id=31-2)  
 **Updated:** 2026-09-28

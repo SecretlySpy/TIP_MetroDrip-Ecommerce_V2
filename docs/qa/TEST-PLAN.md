@@ -1,4 +1,4 @@
-# MetroDripJS — Quality Assurance & Test Plan
+# MetroDrip_v2 — Quality Assurance & Test Plan
 
 **Version:** 2.0.0  
 **Effective Date:** 2026-11-03  
@@ -8,7 +8,7 @@
 
 ## 1. Scope & Objectives
 
-The primary objective of this Test Plan is to validate the integrity, security, usability, and cross-platform parity of MetroDripJS across its four primary interfaces:
+The primary objective of this Test Plan is to validate the integrity, security, usability, and cross-platform parity of MetroDrip_v2 across its four primary interfaces:
 - **Admin Console (`web/admin/`)**: User management, custom roles, platform settings, audit trails.
 - **Merchant Console (`web/merchant/`)**: Product catalog, variants matrix, inventory movements, order management, fulfillment, shipping zones, banner content.
 - **Customer Web Storefront (`web/customer/`)**: Storefront discovery, catalog navigation, PDP, cart, checkout, order tracking, reviews, account management.

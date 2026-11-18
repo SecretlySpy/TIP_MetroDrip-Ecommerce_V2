@@ -1,4 +1,4 @@
-# MetroDripJS — Test Results & Evidence Log
+# MetroDrip_v2 — Test Results & Evidence Log
 
 **Test Run Timestamp:** 2026-11-03 15:25:00 UTC+8  
 **Environment:** Linux (Ubuntu 24.04 x86_64), Node.js v22.23.2, Python 3.12.3, Chromium Headless  
@@ -12,7 +12,7 @@
 | Module / Area | Test Suite / Command | Executed | Passed | Failed | Skipped | Status | Duration |
 |---|---|---:|---:|---:|---:|---|---:|
 | **Backend Core** | `python manage.py test --pattern="tests*.py"` | 246 | 240 | 0 | 6* | **PASS** | 262.8s |
-| **Client Services** | `node --test "tests/client/*.test.mjs"` | 250 | 250 | 0 | 0 | **PASS** | 0.5s |
+| **Client Services** | `node --test "tests/client/*.test.mjs"` | 251 | 251 | 0 | 0 | **PASS** | ~17.3s |
 | **Static Types** | `npx tsc --noEmit` | 1 | 1 | 0 | 0 | **PASS** | 5.8s |
 | **Database Migrations**| `python manage.py makemigrations --check` | 1 | 1 | 0 | 0 | **PASS** | 0.8s |
 | **Expo Health** | `npx expo-doctor` | 18 | 18 | 0 | 0 | **PASS** | 7.5s |
@@ -54,8 +54,8 @@
   - `catalog/tests_featured.py`: Verified `featured=1` parameter filtering across categories and storefront APIs.
 
 ### B. Client Test Suite (`npm run test:client`)
-- **Found**: 250 tests across 28 test modules.
-- **Result**: `tests 250, suites 0, pass 250, fail 0, duration_ms 502.7`.
+- **Found**: 251 tests across 28 test modules.
+- **Result**: `tests 251, suites 0, pass 251, fail 0, duration_ms ~17280`.
 - **Highlights**:
   - `apiClient.test.mjs`: Verified zero cross-origin token leaks, AbortSignal timeout management, and DRF error payload normalization.
   - `cartLogic.test.mjs`: Verified client-side estimate invariants and server total recalculations.

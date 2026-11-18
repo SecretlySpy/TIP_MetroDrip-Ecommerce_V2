@@ -1,4 +1,4 @@
--- PostgreSQL Multi-Database Initialization for MetroDripJS Microservices
+-- PostgreSQL Multi-Database Initialization for MetroDrip_v2 Microservices
 -- Enforces database-per-service isolation with dedicated credentials per service.
 
 -- 1. Create dedicated database users

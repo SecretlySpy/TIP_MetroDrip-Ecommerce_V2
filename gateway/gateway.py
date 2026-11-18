@@ -1,5 +1,5 @@
 """
-MetroDripJS API Gateway (Python implementation for development & local orchestration)
+MetroDrip_v2 API Gateway (Python implementation for development & local orchestration)
 Routes requests across 5 independent microservices with correlation ID tracing.
 """
 

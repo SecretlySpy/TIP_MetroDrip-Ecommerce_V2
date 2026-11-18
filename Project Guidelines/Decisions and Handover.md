@@ -1,16 +1,35 @@
 # Decisions and Handover
 
-**Status:** ACADEMIC DEMO HOLD and PRODUCTION HOLD; 2026-10-27 team content and logo checkpoint
+**Status:** ACADEMIC DEMO HOLD and PRODUCTION HOLD; 2026-11-18 project identity & workspace checkpoint
 
-**Project:** MetroDripJS urban streetwear commerce platform
+**Project:** MetroDrip_v2 urban streetwear commerce platform
 
 **Current target:** One secured same-origin Django monolith + one no-cost PostgreSQL database + an EAS internal Android APK
 
-**Decision updated:** 2026-10-27
+**Decision updated:** 2026-11-18
 
 **Owner:** Core Engineering & Architecture Team  
 
 ---
+
+## Project identity & workspace rebranding checkpoint — 2026-11-18
+
+- **Scope:** Completed full repository codebase synchronization from legacy `MetroDripJS` identity to `MetroDrip_v2`.
+- **Renamed workspace assets:**
+  - `MetroDripJS.code-workspace` renamed to `MetroDrip_v2.code-workspace`.
+  - `.idea/MetroDripJS.iml` renamed to `.idea/MetroDrip_v2.iml`; `.idea/modules.xml` updated.
+- **Application configuration & metadata:**
+  - `app.json`: Updated Expo `name` and `slug` to `MetroDrip_v2`.
+  - `.env.example`: Updated configuration template title.
+  - `database/init_microservices_postgresql.sql`: Updated database initialization header.
+  - `gateway/gateway.py`: Updated gateway docstring title.
+  - `metrodrip_backend/identity/brevo.py`: Updated dispatch `User-Agent` to `MetroDrip_v2-Identity/1.0`.
+- **Documentation:**
+  - Synchronized `README.md`, `Project Guidelines/`, and `docs/qa/` suites.
+- **Verification:**
+  - `npm run test:client`: 251/251 tests passed (0 failures).
+  - `python metrodrip_backend/manage.py test orders`: 91/91 tests passed (5 skips on SQLite).
+  - Zero remaining occurrences of `MetroDripJS` across the codebase.
 
 ## Team content and logo checkpoint — 2026-10-27
 
@@ -142,12 +161,12 @@ The following records describe the earlier distributed baseline. ADR-01, ADR-02,
 
 - **Date & Environment**: 2026-09-27 | Local Development (`Windows 11`, Python 3.11 Virtual Environment, SQLite per service) & Production Docker Compose (`PostgreSQL 16`, Nginx).
 - **Status at this historical snapshot**: Release HOLD. Its then-open staff-session and demo-fallback findings were addressed by the newer implementation snapshot above; no such resolution should be backdated into the dated QA reports. Native, PostgreSQL, live-provider, and Render verification remain open.
-- **Repository Location**: `A:\Users\Archim Pameroyan\Documents\GitHub\MetroDripJS`
+- **Repository Location**: `A:\Users\Archim Pameroyan\Documents\GitHub\MetroDrip_v2`
 
 ### Completed Deliverables and Exact File Paths
 
 ```
-MetroDripJS/
+MetroDrip_v2/
 ├── gateway/                                # Port 8000 API Gateway
 │   ├── gateway.py                          # Development reverse proxy with correlation IDs
 │   ├── nginx.conf                          # Production Nginx reverse proxy configuration
@@ -228,7 +247,7 @@ To resume development, spin up the environment, or run verification tests from a
 
 1. **Activate Environment & Run Verification**:
    ```powershell
-   cd "A:\Users\Archim Pameroyan\Documents\GitHub\MetroDripJS"
+   cd "A:\Users\Archim Pameroyan\Documents\GitHub\MetroDrip_v2"
    metrodrip_backend\.venv\Scripts\python.exe scripts\verify_microservices_e2e.py
    ```
 2. **Start Services for Active Development**:

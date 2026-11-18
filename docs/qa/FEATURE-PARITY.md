@@ -1,4 +1,4 @@
-# MetroDripJS — Cross-Platform Feature Parity Matrix
+# MetroDrip_v2 — Cross-Platform Feature Parity Matrix
 
 **Date:** 2026-11-03  
 **Audited Platforms:**
